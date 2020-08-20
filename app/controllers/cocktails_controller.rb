@@ -1,5 +1,6 @@
 class CocktailsController < ApplicationController
-  def index #sempre no plural e maiuscula
+
+  def index #sempre no plural e maiuscula no dps do igual 
     @cocktails = Cocktail.all
   end
 
@@ -24,6 +25,5 @@ class CocktailsController < ApplicationController
 
   def cocktail_params
     params.require(:cocktail).permit(:name)
-  end 
-
+  end
 end
